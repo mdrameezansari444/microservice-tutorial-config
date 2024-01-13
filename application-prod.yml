@@ -1,1 +1,13 @@
+spring:
+  application:
+    name: CONFIG-DEV
 
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # Specify the URL of the Eureka server
+  instance:
+    prefer-ip-address: true
+    fetch-registry: true
+    register-with-eureka: true
